@@ -51,3 +51,23 @@ Pode ser difícil adicionar um novo tipo de produto, pois exige modificar todas 
 Resumo final:
 Abstract Factory organiza a criação de objetos em famílias. Ele é estruturado com produtos abstratos, produtos concretos, uma fábrica abstrata e fábricas concretas.
 O cliente depende apenas das interfaces, tornando o sistema mais flexível e fácil de manter.
+
+// PRODUTOS ABSTRATOS
+
+// PRODUTO CONCRETO - 
+
+// PRODUTO CONCRETO - 
+
+// FABRICA ABSTRATA
+
+// FABRICA CONCRETA - 
+
+// FABRICA CONCRETA - 
+
+// CLIENTE
+
+// USO
+
+O PADRÃO ABSTRACT FACTORY É VOCÊ CRIAR OS PRODUTOS ABSTRATOS
+E DEPOIS FAZER CADA PRODUTO PERSONALIZADO PARA O PRODUTO CONCRETO
+E DEPOIS CHAMA-LOS NA FABRICA CONCRETA
