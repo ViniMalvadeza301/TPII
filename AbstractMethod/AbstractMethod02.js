@@ -1,3 +1,5 @@
+// PRODUTOS ABSTRATOS
+
 class ProdutoEletronico {
     detalhes() {
         throw new Error('detalhes() deve ser implementado!');
@@ -9,6 +11,8 @@ class ProdutoModa {
         throw new Error('detalhes() deve ser implementado!');
     }
 }
+
+// PRODUTO CONCRETO - TECH
 
 class TelefoneTech extends ProdutoEletronico {
     detalhes() {
@@ -22,6 +26,8 @@ class CamisaTech extends ProdutoModa {
     }
 }
 
+// PRODUTO CONCRETO - FASHION
+
 class TelefoneFashion extends ProdutoEletronico {
     detalhes() {
         return 'Telefone Fashion: 128Gb, 4G, foco em beleza.';
@@ -33,6 +39,8 @@ class CamisaFashion extends ProdutoModa {
         return 'Camisa Fashion: algodão, lisa, foco em beleza.'
     }
 }
+
+// FABRICA ABSTRATA
 
 class FabricaProduto {
     criarEletronico() {
@@ -46,6 +54,8 @@ class FabricaProduto {
     }
 }
 
+// FABRICA CONCRETA - TECH
+
 class FabricaEletronico extends FabricaProduto {
     criarEletronico() {
         return new TelefoneTech();
@@ -55,6 +65,8 @@ class FabricaEletronico extends FabricaProduto {
         return new CamisaTech();
     }
 }
+
+// FABRICA CONCRETA - FASHION
 
 class FabricaModa extends FabricaProduto {
     criarEletronico() {
@@ -66,6 +78,8 @@ class FabricaModa extends FabricaProduto {
     }
 }
 
+// CLIENTE
+
 function lojaVirtual(fabrica) {
     const produtoEletronico = fabrica.criarEletronico();
     const produtoModa = fabrica.criarModa();
@@ -75,6 +89,8 @@ function lojaVirtual(fabrica) {
     console.log('-'.repeat(50));
 
 }
+
+// USO
 
 lojaVirtual(new FabricaEletronico());
 lojaVirtual(new FabricaModa());
