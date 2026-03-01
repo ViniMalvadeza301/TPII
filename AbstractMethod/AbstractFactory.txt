@@ -1,4 +1,5 @@
-Abstract Factory é um padrão de projeto criacional que fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas. Ele é usado quando precisamos garantir que vários objetos criados façam parte da mesma “família” e sejam compatíveis entre si.
+Abstract Factory é um padrão de projeto criacional que fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+Ele é usado quando precisamos garantir que vários objetos criados façam parte da mesma “família” e sejam compatíveis entre si.
 
 Como se constrói o padrão:
 
@@ -48,4 +49,5 @@ Aumenta a quantidade de classes.
 Pode ser difícil adicionar um novo tipo de produto, pois exige modificar todas as fábricas.
 
 Resumo final:
-Abstract Factory organiza a criação de objetos em famílias. Ele é estruturado com produtos abstratos, produtos concretos, uma fábrica abstrata e fábricas concretas. O cliente depende apenas das interfaces, tornando o sistema mais flexível e fácil de manter.
+Abstract Factory organiza a criação de objetos em famílias. Ele é estruturado com produtos abstratos, produtos concretos, uma fábrica abstrata e fábricas concretas.
+O cliente depende apenas das interfaces, tornando o sistema mais flexível e fácil de manter.
